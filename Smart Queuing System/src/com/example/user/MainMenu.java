@@ -164,7 +164,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
 
                     Editor edit = manager.edit();
                     edit.putInt("tictic", num);
-                    edit.apply();
+                    edit.commit();
 
                     context.startActivity(i);
                 }
@@ -273,7 +273,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 } else {
                     Editor edit = manager.edit();
                     edit.putInt("tictic", -1);
-                    edit.apply();
+                    edit.commit();
 
                     Toast.makeText(context, "You ticket has been deleted", Toast.LENGTH_SHORT).show();
                 }
