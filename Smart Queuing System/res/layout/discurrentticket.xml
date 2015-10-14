@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+	android:background="@color/grey"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/txtDisplayCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="" 
+        android:gravity="center"
+        android:textSize="20sp"
+        android:ems="10"
+        android:background="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtDisplayCurrent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:textSize="20sp"
+        android:text="We are now serving number : " 
+        android:textStyle="bold"/>
+
+</RelativeLayout> 
